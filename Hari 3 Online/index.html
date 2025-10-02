@@ -1,59 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Marina Food</title>
     <style>
       body {
         font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f4f4f9;
         margin: 0;
         padding: 0;
+        background: #fdfdfd;
+        text-align: center;
       }
 
-      h1 {
-        background-color: #4caf50;
-        color: white;
-        padding: 20px;
-        margin: 0 0 20px 0;
+      header {
+        background: #fff;
+        padding: 15px 30px;
+        border-bottom: 2px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      nav table {
-        margin: 0 auto;
-        border-collapse: collapse;
-      }
-
-      nav td {
-        padding: 10px 20px;
-        background-color: #ffffff;
-        border: 2px solid #4caf50;
+      header h1 {
+        margin: 0;
+        font-size: 22px;
+        color: #333;
       }
 
       nav a {
+        margin: 0 12px;
         text-decoration: none;
-        color: #333;
+        color: #007bff;
         font-weight: bold;
+        transition: 0.3s;
       }
 
       nav a:hover {
-        color: #4caf50;
+        color: #ff6600;
+      }
+
+      .hero {
+        margin: 20px 0;
+      }
+
+      .hero img {
+        width: 120px;
+      }
+
+      .hero h2 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .hero p {
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .hero a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background: #007bff;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+      }
+
+      .hero a:hover {
+        background: #0056b3;
+      }
+
+      section {
+        margin: 30px auto;
+        width: 90%;
+      }
+
+      h3 {
+        text-align: center;
+        color: #444;
+        margin-bottom: 15px;
+      }
+
+      .item {
+        display: inline-block;
+        text-align: center;
+        width: 180px;
+        margin: 10px;
+        vertical-align: top;
+      }
+
+      .item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .item p {
+        margin-top: 8px;
+        font-weight: bold;
+      }
+
+      .promo {
+        background: #f9f9f9;
+        padding: 20px;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        width: 80%;
+      }
+
+      .promo h3 {
+        margin: 0 0 10px;
+        color: #d9534f;
+      }
+
+      .promo a {
+        display: inline-block;
+        margin-top: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #007bff;
+      }
+
+      .promo a:hover {
+        color: #ff6600;
+      }
+
+      footer {
+        background: #f1f1f1;
+        padding: 20px;
+        font-size: 13px;
+        color: #555;
+        margin-top: 20px;
+        text-align: left;
+      }
+
+      footer {
+        background: #f1f1f1;
+        padding: 30px 50px; /* Tambahin padding biar ga mepet */
+        font-size: 13px;
+        color: #555;
+        margin-top: 20px;
+        text-align: center; /* Biar rata tengah */
+      }
+
+      .footer-box {
+        display: inline-block;
+        width: 220px; /* Lebarin dikit */
+        margin: 0 20px; /* Kasih jarak antar box */
+        vertical-align: top;
+        text-align: left; /* Isi text tetap rata kiri */
+      }
+
+      .footer-box h4 {
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      .footer-box a:hover {
+        text-decoration: underline;
+      }
+
+      .copyright {
+        text-align: center;
+        border-top: 1px solid #ccc;
+        padding-top: 10px;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+
+      .item .btn-detail {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 6px 12px;
+        background: #007bff;
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        border-radius: 4px;
+        transition: 0.3s;
+      }
+
+      .item .btn-detail:hover {
+        background: #0056b3;
       }
     </style>
   </head>
   <body>
-    <h1>Selamat Datang!</h1>
-    <nav>
-      <table>
-        <tr>
-          <td><a href="index.html">Home</a></td>
-          <td><a href="profil.html">Profil</a></td>
-          <td><a href="about.html">About</a></td>
-          <td><a href="kontak.html">Kontak</a></td>
-          <td><a href="formulir.html">Formulir</a></td>
-        </tr>
-      </table>
-    </nav>
+    <header>
+      <h1>Marina Food</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="about.html">About</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="formulir.html">Formulir</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <img src="img/makanan.jpg" alt="Makanan" />
+      <h2>Makanan Terbaru Musim Ini</h2>
+      <p>
+        Temukan kesukaan terbaru dengan produk pilihan kami yang berkualitas.
+      </p>
+      <a href="#">>> BELANJA SEKARANG <<</a>
+    </div>
+
+    <section>
+      <h3>Kategori Pilihan</h3>
+      <div class="item">
+        <img src="img/indo.jpg" alt="Makanan Indonesia" />
+        <p>Makanan Indonesia</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+      <div class="item">
+        <img src="img/jepang.jpg" alt="Makanan Jepang" />
+        <p>Makanan Jepang</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+      <div class="item">
+        <img src="img/korea.jpg" alt="Makanan Korea" />
+        <p>Makanan Korea</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+      <div class="item">
+        <img src="img/italia.jpg" alt="Makanan Italia" />
+        <p>Makanan Italia</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Produk Terlaris</h3>
+      <div class="item">
+        <img src="img/eskrim.jpg" alt="Ice Cream" />
+        <p>Ice Cream</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+      <div class="item">
+        <img src="img/waffle.jpg" alt="Waffle" />
+        <p>Waffle</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+      <div class="item">
+        <img src="img/dessert.jpg" alt="Dessert" />
+        <p>Dessert</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+      <div class="item">
+        <img src="img/ckae.jpg" alt="Cake" />
+        <p>Cake</p>
+        <a href="#" class="btn-detail">Lihat Detail</a>
+      </div>
+    </section>
+
+    <div class="promo">
+      <h3>🎉 Diskon Akhir Tahun! 🎉</h3>
+      <p>Dapatkan potongan harga hingga 50% untuk item tertentu. Terbatas!</p>
+      <a href="#">>> Lihat Promo <<</a>
+    </div>
+
+    <footer>
+      <div class="footer-box">
+        <h4>Marina Food</h4>
+        <p>
+          Toko online terpercaya dengan produk berkualitas dan harga terjangkau.
+        </p>
+      </div>
+      <div class="footer-box">
+        <h4>Link Cepat</h4>
+        <a href="#">Tentang Kami</a>
+        <a href="#">FAQ</a>
+        <a href="#">Kebijakan Privasi</a>
+      </div>
+      <div class="footer-box">
+        <h4>Hubungi Kami</h4>
+        <p>Email: admin@marina.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+      </div>
+      <div class="footer-box">
+        <h4>Ikuti Kami</h4>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+      <div class="copyright">&copy; 2025 Marina Food. All Rights Reserved.</div>
+    </footer>
   </body>
 </html>
