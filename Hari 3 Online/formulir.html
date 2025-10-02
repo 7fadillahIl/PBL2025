@@ -3,6 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <title>Formulir Pendaftaran Pelatihan</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fc;
+        margin: 20px;
+        padding: 0;
+        text-align: center;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        margin: 5px 0;
+        color: #444;
+      }
+
+      fieldset {
+        border: 2px solid #4cafef;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 15px auto;
+        width: 50%;
+        background: #fff;
+        text-align: left;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      legend {
+        font-weight: bold;
+        color: #2196f3;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 95%;
+        padding: 8px;
+        margin: 5px 0 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      button {
+        background: #2196f3;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      button:hover {
+        background: #1976d2;
+      }
+
+      button a {
+        text-decoration: none;
+        color: white;
+      }
+
+      button[type="reset"] {
+        background: #f44336;
+      }
+
+      button[type="reset"]:hover {
+        background: #c62828;
+      }
+
+      /* Navigasi bawah */
+      .nav-buttons {
+        margin-top: 20px;
+      }
+
+      .nav-buttons button {
+        background: #4caf50;
+      }
+
+      .nav-buttons button:hover {
+        background: #388e3c;
+      }
+    </style>
   </head>
   <body>
     <h2>Pendaftaran Pelatihan Web Menggunakan Node JS dan React</h2>
@@ -17,10 +107,9 @@
       <p>Nomor Telepon (WhatsApp):</p>
       <input type="text" /><br />
       <p>Jenis Kelamin:</p>
-      <input type="radio" /> Pria <input type="radio" /> Wanita
+      <input type="radio" name="gender" /> Pria
+      <input type="radio" name="gender" /> Wanita
     </fieldset>
-
-    <br />
 
     <fieldset>
       <legend>Pilihan Pelatihan</legend>
@@ -41,14 +130,14 @@
       <textarea rows="3" cols="40"></textarea>
     </fieldset>
 
-    <br />
     <button>Daftar Sekarang</button>
     <button type="reset">Bersihkan Formulir</button>
+
+    <div class="nav-buttons">
+      <button><a href="index.html">Home</a></button>
+      <button><a href="profil.html">Profil</a></button>
+      <button><a href="about.html">About</a></button>
+      <button><a href="kontak.html">Kontak</a></button>
+    </div>
   </body>
-  </br>
-  </br>
-  <button><a href="index.html">Home</a></button>
-  <button><a href="profil.html">Profil</a></button>
-  <button><a href="about.html">About</a></button>
-  <button><a href="kontak.html">Kontak</a></button>
 </html>
